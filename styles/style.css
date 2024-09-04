@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+      --vermelho-principal: #8C111A;
+      --vermelho-secundario: #260507;
+      --vermelho-terciario: #EA1D2C;
+      --vermelho-quaternario: #E86C6C;
+      --verde: #8FD29E;
+      --amarelo: #F1D17E;
+      --branco: #FFF;
+      --preto: #000;
+  }
+  
+  h1 {
+      color: var(--vermelho-principal);
+  }
+  
+  .text-primary {
+      color: #8C111A !important;
+  }
+  
+  .bg-primary {
+      color: #8C111A !important;
+  }
+  
+  .bg-secondary {
+      color: #8C111A !important;
+  }
+  
