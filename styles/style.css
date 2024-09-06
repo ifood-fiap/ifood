@@ -1,23 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/*
+  --bs-primary: #8C111A;
+  --bs-secondary: #260507;
+  --bs-success: #8FD29E;
+  --bs-info: #0dcaf0;
+  --bs-warning: #F1D17E;
+  --bs-danger: #EA1D2C;
+  --bs-light: #fff;
+  --bs-dark: #000;
+*/
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-  background: linear-gradient(0deg, #8C111A -1.5%, #260507 54.22%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body {
+  background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
   background-repeat: no-repeat;
-  }
-  :root {
-      --vermelho-principal: #8C111A !important;
-      --vermelho-secundario: #260507 !important;
-      --vermelho-terciario: #EA1D2C !important;
-      --vermelho-quaternario: #E86C6C !important;
-      --verde: #8FD29E !important;
-      --amarelo: #F1D17E !important;
-      --branco: #FFF !important;
-      --preto: #000 !important;
-  }
-  
-  h1 {
-      color: var(--vermelho-terciario);
-    }
+}
