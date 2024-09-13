@@ -29,7 +29,47 @@ body {
 label{
   color: white;
 }
-div .img-logo {
-  /* Pensei em usar um flex para alinha o item img no centro */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.area-logo {
+  position: relative;
 }
 
+.area-logo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  margin:0 auto;
+}
+
+.input-email,
+.input-senha {
+  display: flex;
+  flex-direction: column;
+}
+
+.botao {
+  width: 100%;
+}
+
+.primary {
+  position: relative;
+}
+.primary::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: aqua;
+  margin:16px auto 0 ;
+}
+
+.cadastro {
+  white-space: nowrap;
+}
