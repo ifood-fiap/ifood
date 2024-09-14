@@ -2,24 +2,19 @@
 
 .cadastro {
     white-space: nowrap;
-  }
+}
 .carousel-item {
     background: #f8f9fa;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-  
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0,0,0,0.5);
     border-radius: 50%;
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .navbar-nav {
     margin-left: auto;
 }
