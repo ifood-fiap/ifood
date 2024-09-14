@@ -4,7 +4,7 @@
   --bs-primary: #8C111A;
   --bs-secondary: #260507;
   --bs-success: #8FD29E;
-  --bs-info: #0dcaf0;
+  --bs-info: #53040B;
   --bs-warning: #F1D17E;
   --bs-danger: #EA1D2C;
   --bs-light: #fff;
@@ -22,6 +22,7 @@ body {
   margin: 6px;
   background-color: #fff;
 }
+
 .container{
   height: 100%;
   display: flex;
@@ -30,12 +31,15 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px black;
 }
+
 label{
   color: white;
 }
+
 img {
-  max-height: 1200px;
+  width: 350px;
 }
+
 .area-logo {
   position: relative;
 }
@@ -46,33 +50,26 @@ img {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: aqua;
-  margin:0 auto;
-}
-
-.input-email,
-.input-senha {
-  display: flex;
-  flex-direction: column;
-}
-
-.botao {
-  width: 100%;
+  background-color: var(--bs-info);
+  margin: 0 auto;
 }
 
 .primary {
   position: relative;
 }
+
 .primary::after {
   content: '';
   position: relative;
   display: block;
   width: 100%;
   height: 2px;
-  background-color: aqua;
-  margin:16px auto 0 ;
+  background-color: var(--bs-info);
+  margin: 42px auto 0 ;
 }
 
-.cadastro {
-  white-space: nowrap;
+@media (min-width: 992px) {
+  .area-logo::after {
+    display: none;
+  }
 }
