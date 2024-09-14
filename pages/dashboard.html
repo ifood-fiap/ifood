@@ -4,23 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
 </head>
 <body>
     <headar> 
-       <menu>
-        <ul>
-            <li><a href="#">Seu perfil</a></li>
-            <li><a href="#">Conversas</a></li>
-            <li><a href="#">Pagamentos</a></li>
-            <li><a href="#">Configurações</a></li>
-            <li><a href="#">Ajuda</a></li>
-            <li><a href="#">Sair</a></li>
-        </ul>
-       </menu> 
+       <nav class="navbar bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <!-- Icone perfil -->
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Seu perfil</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Conversas</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Pagamentos</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Configurações</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Ajuda</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="#">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+       </nav> 
     </headar>
     <main>
         <!-- Section do total saldo -->
-        <section></section>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel-dark carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  class="active" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item ">
+                    <div class="d-block w-100 text-center">
+                        <h2>Receita</h2>
+                        <p>Detalhes sobre a informação 3.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item active">
+                    <div class="d-block w-100 text-center">
+                        <h2>Total Saldo</h2>
+                        <p>Detalhes sobre a informação 3.</p>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100 text-center">
+                        <h2>Despesas</h2>
+                        <p>Detalhes sobre a informação 3.</p>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+        </section>
 
         <!-- Section das receitas -->
          <section></section>
@@ -30,6 +93,6 @@
     </main>
 
     <footer>Todos os direitos reservados</footer>
-
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
