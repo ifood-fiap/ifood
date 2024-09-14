@@ -15,11 +15,22 @@
     background-color: rgba(0,0,0,0.5);
     border-radius: 50%;
 }
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .navbar-nav {
     margin-left: auto;
 }
 .navbar-toggler {
     margin-right: auto; /* Alinha o botão do menu burger à esquerda */
 }
-  
+img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.area-imagem {
+    margin: 20px 30px ;
+}
