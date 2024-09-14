@@ -3,16 +3,23 @@
 .cadastro {
     white-space: nowrap;
   }
-  .carousel-item {
+.carousel-item {
     background: #f8f9fa;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
-  }
+}
   
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-color: rgba(0,0,0,0.5);
     border-radius: 50%;
-  }
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+.navbar-toggler {
+    margin-right: auto; /* Alinha o botão do menu burger à esquerda */
+}
   
