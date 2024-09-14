@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,129 +9,130 @@
     <link rel="stylesheet" href="../styles/dashboard.css">
 </head>
 <body>
-    <headar> 
-       <nav class="navbar bg-dark navbar-dark">
-        <!-- colocar o nav bar na cor do projeto -->
+    <headar>
+        <nav class="navbar bg-dark navbar-dark">
+            <!-- colocar o nav bar na cor do projeto -->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="../assets/icons/conta-icon.svg" alt="">
                 </a>
-
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="navbar-collapse collapse" id="menu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Seu perfil</a>
                         </li>
                         <li class="nav-item"></li>
-                            <a class="nav-link" href="#">Conversas</a>
+                        <a class="nav-link" href="#">Conversas</a>
                         </li>
                         <li class="nav-item"></li>
-                            <a class="nav-link" href="#">Pagamentos</a>
+                        <a class="nav-link" href="#">Pagamentos</a>
                         </li>
                         <li class="nav-item"></li>
-                            <a class="nav-link" href="#">Configurações</a>
+                        <a class="nav-link" href="#">Configurações</a>
                         </li>
                         <li class="nav-item"></li>
-                            <a class="nav-link" href="#">Ajuda</a>
+                        <a class="nav-link" href="#">Ajuda</a>
                         </li>
                         <li class="nav-item"></li>
-                            <a class="nav-link" href="#">Sair</a>
+                        <a class="nav-link" href="#">Sair</a>
                         </li>
                     </ul>
                 </div>
             </div>
-       </nav> 
+        </nav>
     </headar>
     <main>
         <!-- Section do total saldo -->
         <section>
             <div id="carouselExampleIndicators" class="carousel-dark carousel slide">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"  class="active" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="active" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
-                  <div class="carousel-item ">
-                    <div class="d-block w-100 text-center">
-                        <p><strong>Receitas</strong></p>
-                        <div>
-                            <p>Caixa</p>
-                            <!-- R$758,32 -->
+                    <div class="carousel-item ">
+                        <div class="d-block w-100 text-center">
+                            <p><strong>Receitas</strong></p>
+                            <div>
+                                <p>Caixa</p>
+                                <!-- R$758,32 -->
+                            </div>
+                            <div>
+                                <p>Delivery</p>
+                                <!-- R$347,60 -->
+                            </div>
+                            <div>
+                                <p>Reservas</p>
+                                <!-- R$450,00 -->
+                            </div>
                         </div>
-                        <div>
-                            <p>Delivery</p>
-                            <!-- R$347,60 -->
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 text-center">
+                            <p>Total Saldo</p>
+                            <h1>R$ 1249,68</h1>
+                            <p><strong>Finanças</strong></p>
+                            <div>
+                                <p>Entradas</p>
+                                <!-- R$14987,51 -->
+                            </div>
+                            <div>
+                                <p>Saldos</p>
+                                <!-- R$8250,03 -->
+                            </div>
                         </div>
-                        <div>
-                            <p>Reservas</p>
-                            <!-- R$450,00 -->
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 text-center">
+                            <p><strong>Despesas</strong></p>
+                            <div>
+                                <p>Aluguel</p>
+                                <!-- R$3500,00 -->
+                            </div>
+                            <div>
+                                <p>Utilidades</p>
+                                <!-- R$1240,39 -->
+                            </div>
+                            <div>
+                                <p>Pessoal</p>
+                                <!-- R$14838,57 -->
+                            </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item active">
-                    <div class="d-block w-100 text-center">
-                        <p>Total Saldo</p>
-                        <h1>R$ 1249,68</h1>
-                        <p><strong>Finanças</strong></p>
-                        <div>
-                            <p>Entradas</p>
-                            <!-- R$14987,51 -->
-                        </div>
-                        <div>
-                            <p>Saldos</p>
-                            <!-- R$8250,03 -->
-                        </div>
-                      </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="d-block w-100 text-center">
-                        <p><strong>Despesas</strong></p>
-                        <div>
-                            <p>Aluguel</p>
-                            <!-- R$3500,00 -->
-                        </div>
-                        <div>
-                            <p>Utilidades</p>
-                            <!-- R$1240,39 -->
-                        </div>
-                        <div>
-                            <p>Pessoal</p>
-                            <!-- R$14838,57 -->
-                        </div>
-                      </div>
-                  </div>
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-              
+            </div>
         </section>
-
         <!-- Section das receitas -->
-         <section class="area-imagem">
+        <section class="area-imagem">
             <img src="../assets/images/grafico.jpeg" alt="Grafico">
-         </section>
-
-         <!-- sectrion das despesas -->
+        </section>
+        <!-- sectrion das despesas -->
         <section>
 
         </section>
     </main>
 
     <footer>Todos os direitos reservados</footer>
-    
+
     <script src="../js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
