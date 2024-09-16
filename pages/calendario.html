@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendario</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/calendario.css">
-</head>
-<body>
-    <div class="container">
 
-        <nav class="navbar navbar-expand-lg menu">
-            <div class="container-fluid area-menu">
-                <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
-                </a>
-                <div class="navbar-collapse collapse" id="menu">
-                    <ul class="navbar-nav custem-text">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Seu perfil</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Conversas</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Pagamentos</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Configurações</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Ajuda</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Sair</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container mt-5">
-            <h1 class="text-center">Programação</h1>
-            <!-- <div class="row">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/calendario.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg menu">
+      <div class="container-fluid area-menu">
+        <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+        </a>
+        <div class="navbar-collapse collapse" id="menu">
+          <ul class="navbar-nav custem-text">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Seu perfil</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#">Conversas</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#">Pagamentos</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#">Configurações</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#">Ajuda</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="#">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" mt-5">
+      <h1 class="text-center">Programação</h1>
+      <!-- <div class="row">
               <div class="col text-center">Dom</div>
               <div class="col text-center">Seg</div>
               <div class="col text-center">Ter</div>
@@ -53,78 +55,79 @@
               <div class="col text-center">Sex</div>
               <div class="col text-center">Sáb</div>
             </div> -->
-          
-            <!-- Dias do mês -->
-            <div class="row">
-              <div class="col calendar-day"></div> <!-- Espaços vazios para o início do mês -->
-              <div class="col calendar-day"></div>
-              <div class="col calendar-day"></div>
-              <div class="col calendar-day"></div>
-              <div class="col calendar-day"></div>
-              <div class="col calendar-day">1</div>
-              <div class="col calendar-day">2</div>
-            </div>
-            <div class="row">
-              <div class="col calendar-day">3</div>
-              <div class="col calendar-day">4</div>
-              <div class="col calendar-day">5</div>
-              <div class="col calendar-day">6</div>
-              <div class="col calendar-day">7</div>
-              <div class="col calendar-day">8</div>
-              <div class="col calendar-day">9</div>
-            </div>
-            <div class="row">
-              <div class="col calendar-day">10</div>
-              <div class="col calendar-day">11</div>
-              <div class="col calendar-day">12</div>
-              <div class="col calendar-day">13</div>
-              <div class="col calendar-day">14</div>
-              <div class="col calendar-day">15</div>
-              <div class="col calendar-day">16</div>
-            </div>
-            <div class="row">
-              <div class="col calendar-day">17</div>
-              <div class="col calendar-day">18</div>
-              <div class="col calendar-day current-day">19</div>
-              <div class="col calendar-day">20</div>
-              <div class="col calendar-day">21</div>
-              <div class="col calendar-day">22</div>
-              <div class="col calendar-day">23</div>
-            </div>
-            <div class="row">
-              <div class="col calendar-day">24</div>
-              <div class="col calendar-day">25</div>
-              <div class="col calendar-day">26</div>
-              <div class="col calendar-day">27</div>
-              <div class="col calendar-day">28</div>
-              <div class="col calendar-day">29</div>
-              <div class="col calendar-day">30</div>
-            </div>
-            <div class="area-programacao">
-              <div>
-                  <p>Hoje, 19 de junho</p>
-              </div>
-              <div>
-                  <p>Pagamento</p>
-                  <p>Pagar energia R$300,00</p>
-                  <p>19 DE JUNHO</p>
-              </div>
-              <div>
-                  <p>Pagamento</p>
-                  <p>Pagar água R$400,00</p>
-                  <p>19 DE JUNHO</p>
-              </div>
-              <div>
-                  <button>Adicionar</button>
-              </div>
-            </div>
-          </div>
-          
-          
+
+      <!-- Dias do mês -->
+      <div class="row">
+        <div class="col calendar-day">27</div> <!-- Espaços vazios para o início do mês -->
+        <div class="col calendar-day">28</div>
+        <div class="col calendar-day">29</div>
+        <div class="col calendar-day">30</div>
+        <div class="col calendar-day">31</div>
+        <div class="col calendar-day">1</div>
+        <div class="col calendar-day">2</div>
+      </div>
+      <div class="row">
+        <div class="col calendar-day">3</div>
+        <div class="col calendar-day">4</div>
+        <div class="col calendar-day">5</div>
+        <div class="col calendar-day">6</div>
+        <div class="col calendar-day">7</div>
+        <div class="col calendar-day">8</div>
+        <div class="col calendar-day">9</div>
+      </div>
+      <div class="row">
+        <div class="col calendar-day">10</div>
+        <div class="col calendar-day">11</div>
+        <div class="col calendar-day">12</div>
+        <div class="col calendar-day">13</div>
+        <div class="col calendar-day">14</div>
+        <div class="col calendar-day">15</div>
+        <div class="col calendar-day">16</div>
+      </div>
+      <div class="row">
+        <div class="col calendar-day">17</div>
+        <div class="col calendar-day">18</div>
+        <div class="col calendar-day current-day">19</div>
+        <div class="col calendar-day">20</div>
+        <div class="col calendar-day">21</div>
+        <div class="col calendar-day">22</div>
+        <div class="col calendar-day">23</div>
+      </div>
+      <div class="row">
+        <div class="col calendar-day">24</div>
+        <div class="col calendar-day">25</div>
+        <div class="col calendar-day">26</div>
+        <div class="col calendar-day">27</div>
+        <div class="col calendar-day">28</div>
+        <div class="col calendar-day">29</div>
+        <div class="col calendar-day">30</div>
+      </div>
+      <div class="area-programacao">
+        <div>
+          <p class="data-dia">Hoje, 19 de junho</p>
+        </div>
+        <div class="quadrado-rosa">
+          <p>Pagamento</p>
+          <p>Pagar energia R$300,00</p>
+          <p>19 DE JUNHO</p>
+        </div>
+        <div class="quadrado-rosa">
+          <p>Pagamento</p>
+          <p>Pagar água R$400,00</p>
+          <p>19 DE JUNHO</p>
+        </div>
+        <div class="area-botao">
+          <button class="btn">Adicionar</button>
+        </div>
+      </div>
     </div>
 
 
+  </div>
 
-    <script src="../js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
