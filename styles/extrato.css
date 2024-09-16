@@ -17,7 +17,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-  }
+}
+
 
 .container{
     max-width: 100%;
@@ -59,6 +60,7 @@ body {
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     background-color: rgba(187, 187, 187, 0.2);
+    font-size: 12px;
 
 }
 .quadrado-verde{
@@ -72,4 +74,33 @@ body {
 .fundo-filtro{
     background-color: rgba(187, 187, 187, 0.2);
     color: var(--bs-dark);
+}
+
+.menu {
+    background-color: rgba(187, 187, 187, 0);
+}
+
+.custem-text{
+    filter: invert(100%);
+}
+.custem-text :hover {
+    background-color: rgba(94, 94, 94, 0.2);;
+}
+.area-dados p{
+    margin: 0;
+}
+
+.area-dados .valor {
+    align-self: center;
+}
+.area-dados .hora-transferencia{
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    min-height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
 }
