@@ -35,6 +35,7 @@ nav {
     background-color: var(--bs-info);
     padding: 20px;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: rgba(0, 0, 0, 0.5);
@@ -55,8 +56,10 @@ img {
     border-radius: 20px;
 }
 
-.area-imagem {
-    margin: 20px 30px;
+.imagem-relatorio {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 p {
@@ -121,7 +124,7 @@ p {
 
 .barra-delivery {
     width: 20%;
-    background-color: var(--bs-success);
+    background-color: var(--bs-warning);
 }
 
 .barra-reservas {
@@ -141,7 +144,7 @@ p {
 
 .barra-pessoal {
     width: 90%;
-    background-color: var(--bs-red);
+    background-color: var(--bs-warning);
 }
 
 .financa-valor {
@@ -150,6 +153,18 @@ p {
     left: 8px;
     font-size: 24px;
     color: var(--bs-dark);
+}
+
+.ver-mais {
+    background-color: var(--bs-secondary);
+    margin: auto 16px;
+    padding: 8px;
+    font-size: 24px;
+    color: var(--bs-light);
+}
+
+.ver-mais:hover {
+    color: var(--bs-darkgray);
 }
 
 div.carousel-item > p {

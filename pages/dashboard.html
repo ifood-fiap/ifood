@@ -49,7 +49,7 @@
         <!-- Section do total saldo -->
         <section>
             <div id="carouselExampleIndicators" class="carousel-dark carousel slide">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators d-none">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         aria-current="true" aria-label="Slide 1">
                     </button>
@@ -70,17 +70,22 @@
                                     <div class="barra barra-caixa"></div>
                                     <p class="financa-valor">R$758,32</p>
                                 </div>
+                            </div>
+                            <div class="financas">
                                 <p class="fs-1">Delivery</p>
                                 <div class="container-valor">
                                     <div class="barra barra-delivery"></div>
                                     <p class="financa-valor">R$347,60</p>
                                 </div>
+                            </div>
+                            <div class="financas">
                                 <p class="fs-1">Reservas</p>
                                 <div class="container-valor">
                                     <div class="barra barra-reservas"></div>
                                     <p class="financa-valor">R$450,00</p>
                                 </div>
                             </div>
+                            <a class="ver-mais" href="#">Ver detalhes</a>
                         </div>
                     </div>
                     <div class="carousel-item active">
@@ -113,11 +118,15 @@
                                     <div class="barra barra-aluguel"></div>
                                     <p class="financa-valor">R$3500,00</p>
                                 </div>
+                            </div>
+                            <div class="financas">
                                 <p class="fs-1">Utilidades</p>
                                 <div class="container-valor">
                                     <div class="barra barra-utilidades"></div>
                                     <p class="financa-valor">R$1240,39</p>
                                 </div>
+                            </div>
+                            <div class="financas">
                                 <p class="fs-1">Pessoal</p>
                                 <div class="container-valor">
                                     <div class="barra barra-pessoal"></div>
@@ -139,47 +148,70 @@
         </section>
         <!-- Section das receitas -->
         <section class="area-imagem">
-            <img src="../assets/images/grafico.jpeg" alt="Grafico">
+            <img id="img-caixa" class="imagem-relatorio caixa d-block" src="../assets/images/caixa.svg" alt="Grafico">
+            <img id="img-delivery" class="imagem-relatorio delivery d-none" src="../assets/images/delivery.svg" alt="Grafico">
+            <img id="img-reservas" class="imagem-relatorio reservas" src="../assets/images/reservas.svg" alt="Grafico">
+            <img id="img-sublocacao" class="imagem-relatorio sublocacao" src="../assets/images/sublocacao.svg" alt="Grafico">
+            <img id="img-investimentos" class="imagem-relatorio investimentos" src="../assets/images/investimentos.svg" alt="Grafico">
+            <img id="img-subsidios" class="imagem-relatorio subsidios" src="../assets/images/subsidios.svg" alt="Grafico">
+            <img id="img-eventos" class="imagem-relatorio eventos" src="../assets/images/eventos.svg" alt="Grafico">
+            <img id="img-aluguel" class="imagem-relatorio aluguel" src="../assets/images/aluguel.svg" alt="Grafico">
+            <img id="img-utilidades" class="imagem-relatorio utilidades" src="../assets/images/utilidades.svg" alt="Grafico">
+            <img id="img-pessoal" class="imagem-relatorio pessoal" src="../assets/images/pessoal.svg" alt="Grafico">
+            <img id="img-operacional" class="imagem-relatorio operacional" src="../assets/images/operacional.svg" alt="Grafico">
+            <img id="img-equipamentos" class="imagem-relatorio equipamentos" src="../assets/images/equipamentos.svg" alt="Grafico">
+            <img id="img-suprimentos" class="imagem-relatorio suprimentos" src="../assets/images/suprimentos.svg" alt="Grafico">
+            <img id="img-limpeza" class="imagem-relatorio limpeza" src="../assets/images/limpeza.svg" alt="Grafico">
+            <img id="img-ingredientes" class="imagem-relatorio ingredientes" src="../assets/images/ingredientes.svg" alt="Grafico">
         </section>
         <!-- sectrion das despesas -->
         <section>
             <div id="monthsCarousel" class="carousel slide">
                 <div class="carousel-inner">
-                    <div class="carousel-item text-center active">
-                        <p>Janeiro</p>
+                    <div class="carousel-item text-center active" data-img="img-caixa">
+                        <p>Caixa</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Fevereiro</p>
+                    <div class="carousel-item text-center" data-img="img-delivery">
+                        <p>Delivery</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Março</p>
+                    <div class="carousel-item text-center" data-img="img-reservas">
+                        <p>Reservas</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Abril</p>
+                    <div class="carousel-item text-center" data-img="img-sublocacao">
+                        <p>Sublocação</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Maio</p>
+                    <div class="carousel-item text-center" data-img="img-investimentos">
+                        <p>Investimentos</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Junho</p>
+                    <div class="carousel-item text-center" data-img="img-subsidios">
+                        <p>Subsídios</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Julho</p>
+                    <div class="carousel-item text-center" data-img="img-eventos">
+                        <p>Eventos</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Agosto</p>
+                    <div class="carousel-item text-center" data-img="img-aluguel">
+                        <p>Aluguel</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Setembro</p>
+                    <div class="carousel-item text-center" data-img="img-utilidades">
+                        <p>Utilidades</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Outubro</p>
+                    <div class="carousel-item text-center" data-img="img-pessoal">
+                        <p>Pessoal</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Novembro</p>
+                    <div class="carousel-item text-center" data-img="img-operacional">
+                        <p>Operacional</p>
                     </div>
-                    <div class="carousel-item text-center">
-                        <p>Dezembro</p>
+                    <div class="carousel-item text-center" data-img="img-equipamentos">
+                        <p>Equipamentos</p>
+                    </div>
+                    <div class="carousel-item text-center" data-img="img-suprimentos">
+                        <p>Suprimentos</p>
+                    </div>
+                    <div class="carousel-item text-center" data-img="img-limpeza">
+                        <p>Limpeza</p>
+                    </div>
+                    <div class="carousel-item text-center" data-img="img-ingredientes">
+                        <p>Ingredientes</p>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#monthsCarousel"
@@ -202,6 +234,7 @@
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/relatorios.js"></script>
 
 </body>
 

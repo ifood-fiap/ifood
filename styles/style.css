@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --bs-primary: #8C111A !important;
-  --bs-secondary: #260507 !important;
-  --bs-success: #8FD29E !important;
-  --bs-info: #53040B !important;
-  --bs-warning: #F1D17E !important;
-  --bs-danger: #EA1D2C !important;
-  --bs-light: #fff !important;
-  --bs-dark: #000 !important;
-  --bs-gray: #bbb !important;
-  --bs-darkgray: #aaa !important;
+    --bs-primary: #8C111A !important;
+    --bs-secondary: #260507 !important;
+    --bs-success: #8FD29E !important;
+    --bs-info: #53040B !important;
+    --bs-warning: #F1D17E !important;
+    --bs-danger: #EA1D2C !important;
+    --bs-red: #E86C6C !important;
+    --bs-light: #fff !important;
+    --bs-dark: #000 !important;
+    --bs-gray: #ECECEC !important;
+    --bs-darkgray: #D9D9D9 !important;
 }
 
 /*
@@ -104,11 +105,11 @@ p {
 }
 
 a {
-  color: var(--bs-gray);
+  color: var(--bs-darkgray);
 }
 
 a:hover {
-  color: var(--bs-darkgray);
+  color: var(--bs-gray);
 }
 
 @media (min-width: 992px) {
