@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <nav class="navbar menu">
+        <nav class="navbar navbar-expand-lg menu">
             <div class="container-fluid area-menu">
                 <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
@@ -43,89 +43,115 @@
                 </div>
             </div>
         </nav>
-        <div class="row area-saldo">
-            <div class="col-10">
-                <p>Saldo disponivel</p>
-                <h1>R$ 1249,68</h1>
-            </div>
-            <div class="col-2">
-                <img src="../assets/icons/olho-aberto-icon.svg" alt="">
-            </div>
-        </div>
-        <div class="row area-financas align-items-end">
-            <div class="col-12">
-                <p>MINHAS FINANÇAS</p>
-            </div>
-            <div class="col">
-                <p class="mb-0">Entradas</p>
-                <p class="mb-0">Saídas</p>
-            </div>
-            <div class="col ">
-                <p class="mb-0">R$14.987,51</p>
-                <p class="mb-0">-R$8.250,03</p>
-            </div>
-        </div>
-        <div class="area-entrada-saida ">
-            <div class="dropdown area-filtro">
-                <a class="btn dropdown-toggle fundo-filtro" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    <img src="../assets/icons/filtro-icon.svg" alt="imagem filtro">
-                    Filtrar
-                </a>
 
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Último dia</a></li>
-                    <li><a class="dropdown-item" href="#">Último 3 dias</a></li>
-                    <li><a class="dropdown-item" href="#">Último 7 dias</a></li>
-                    <li><a class="dropdown-item" href="#">Último 15 dias</a></li>
-                    <li><a class="dropdown-item" href="#">Último 30 dias</a></li>
-                    <li><a class="dropdown-item" href="#">Último 60 dias</a></li>
-                    <li><a class="dropdown-item" href="#">Último 90 dias</a></li>
-                </ul>
-            </div>
-            <div class="d-flex justify-content-between">
-                <p>Hoje,21 mai.</p>
-                <p>Saldo do dia: R$ 1249,68</p>
-            </div>
-            <div class="d-flex justify-content-between area-dados">
-                <img src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
-                <div class="area-transferencia">
-                    <p class="beneficente">Wanderlei silva matos</p>
-                    <p class="tipo-transferencia">Transferência recebida | Crédito</p>
-                    <p class="hora-transferencia">14:36</p>
+        <div class="d-lg-flex justify-content-around flex-lg-row container-superior">
+            <div class="row area-saldo">
+                <div class="col-10">
+                    <p>Saldo disponivel</p>
+                    <h1>R$ 1249,68</h1>
                 </div>
-                <p class="valor">R$ 32,99</p>
-            </div>
-            <div class="d-flex justify-content-between area-dados">
-                <img src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
-                <div class="area-transferencia">
-                    <p class="beneficente">Tadeu Gabriel Santos</p>
-                    <p class="tipo-transferencia">Transferência recebida | Crédito</p>
-                    <p class="hora-transferencia">09:03</p>
+                <div class="col-2">
+                    <img class="float-end" src="../assets/icons/olho-aberto-icon.svg" alt="Olho aberto">
                 </div>
-                <p class="valor">R$ 15,99</p>
             </div>
-            <div class="d-flex justify-content-between">
-                <p>Ontem,20 mai.</p>
-                <p>Saldo do dia: R$ 1200,70</p>
-            </div>
-            <div class="d-flex justify-content-between area-dados">
-                <img src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
-                <div class="area-transferencia">
-                    <p class="beneficente">Geovani Carlos de Souza</p>
-                    <p class="tipo-transferencia">Transferência recebida | Débito</p>
-                    <p class="hora-transferencia">18:30</p>
+            <div class="row area-financas align-items-end">
+                <div class="col-12">
+                    <p>MINHAS FINANÇAS</p>
                 </div>
-                <p class="valor">R$ 75,99</p>
-            </div>
-            <div class="d-flex justify-content-between area-dados">
-                <img src="../assets/icons/quadrado-branco.svg" alt="Quadrado">
-                <div class="area-transferencia">
-                    <p class="beneficente">Massa da Elena</p>
-                    <p class="tipo-transferencia">Transferência recebida | Débito</p>
-                    <p class="hora-transferencia">12:30</p>
+                <div class="col-4 ">
+                    <p class="mb-0">Entradas</p>
+                    <p class="mb-0">Saídas</p>
                 </div>
-                <p class="valor">R$ 200,75</p>
+                <div class="col-6 ">
+                    <p class="mb-0">R$14.987,51</p>
+                    <p class="mb-0">-R$8.250,03</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="area">
+            <div class="area-entrada-saida row">
+                <div class="dropdown area-filtro">
+                    <a class="btn dropdown-toggle fundo-filtro" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../assets/icons/filtro-icon.svg" alt="imagem filtro">
+                        Filtrar
+                    </a>
+    
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Último dia</a></li>
+                        <li><a class="dropdown-item" href="#">Último 3 dias</a></li>
+                        <li><a class="dropdown-item" href="#">Último 7 dias</a></li>
+                        <li><a class="dropdown-item" href="#">Último 15 dias</a></li>
+                        <li><a class="dropdown-item" href="#">Último 30 dias</a></li>
+                        <li><a class="dropdown-item" href="#">Último 60 dias</a></li>
+                        <li><a class="dropdown-item" href="#">Último 90 dias</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>Hoje,21 mai.</p>
+                    <p>Saldo do dia: R$ 1249,68</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center area-dados">
+                    <img class="col-2 img-quadrado" src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
+                    <div class="col-8 area-transferencia">
+                        <p class="beneficente">Wanderlei silva matos</p>
+                        <p class="tipo-transferencia">Transferência recebida | Crédito</p>
+                        <p class="hora-transferencia">14:36</p>
+                    </div>
+                    <p class="text-end col-2 valor">R$ 32,99</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center area-dados">
+                    <img class="col-2 img-quadrado" src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
+                    <div class="col-8 area-transferencia">
+                        <p class="beneficente">Tadeu Gabriel Santos</p>
+                        <p class="tipo-transferencia">Transferência recebida | Crédito</p>
+                        <p class="hora-transferencia">09:03</p>
+                    </div>
+                    <p class="text-end col-2 valor">R$ 15,99</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <p>Ontem,20 mai.</p>
+                    <p>Saldo do dia: R$ 1200,70</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center area-dados">
+                    <img class="col-2 img-quadrado" src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
+                    <div class="col-8 area-transferencia">
+                        <p class="beneficente">Geovani Carlos de Souza</p>
+                        <p class="tipo-transferencia">Transferência recebida | Débito</p>
+                        <p class="hora-transferencia">18:30</p>
+                    </div>
+                    <p class="text-end col-2 valor">R$ 75,99</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center area-dados">
+                    <img class="col-2 img-quadrado" src="../assets/icons/quadrado-branco.svg" alt="Quadrado">
+                    <div class="col-8 area-transferencia">
+                        <p class="beneficente">Massa da Elena</p>
+                        <p class="tipo-transferencia">Transferência recebida | Débito</p>
+                        <p class="hora-transferencia">12:30</p>
+                    </div>
+                    <p class="text-end col-2 valor">R$ 200,75</p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center area-dados">
+                    <img class="col-2 img-quadrado" src="../assets/icons/quadrado-branco.svg" alt="Quadrado">
+                    <div class="col-8 area-transferencia">
+                        <p class="beneficente">Mercadinho do Mineiro</p>
+                        <p class="tipo-transferencia">Transferência recebida | Débito</p>
+                        <p class="hora-transferencia">07:30</p>
+                    </div>
+                    <p class="text-end col-2  valor">R$ 100,00</p>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center area-dados">
+                    <img class="col-2 img-quadrado" src="../assets/icons/quadrado-verde.svg" alt="Quadrado">
+                    <div class="col-8 area-transferencia">
+                        <p class="beneficente">José Roberto</p>
+                        <p class="tipo-transferencia ">Transferência recebida | Crédito</p>
+                        <p class="hora-transferencia">20:00</p>
+                    </div>
+                    <p class="text-end col-2 valor">R$ 35,99</p>
+                </div>
+
             </div>
         </div>
     </div>

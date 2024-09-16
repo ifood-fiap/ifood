@@ -19,6 +19,27 @@
     padding: 0;
     font-family: 'Poppins';
 }
+@media (min-width:1024px){
+    .area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .area-entrada-saida {
+        width: 960px;
+    }
+    .area-financas {
+        width: 300px;
+    }
+    
+    /* .container-superior {
+        max-width: 960px;
+        margin: 0 auto;
+    
+    } */
+    
+}
 
 
 .container{
@@ -62,7 +83,12 @@ body {
     border-radius: 10px;
     background-color: rgba(187, 187, 187, 0.2);
     font-size: 12px;
-
+}
+.area-entrada-saida img {
+    margin-right: 8px;
+}
+.area-entrada-saida .valor{
+    margin-left: 8px;
 }
 .quadrado-verde{
     height: 5px;
@@ -78,7 +104,7 @@ body {
 }
 
 .menu {
-    background-color: rgba(187, 187, 187, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .custem-text{
@@ -104,4 +130,8 @@ body {
     min-height: 35px;
     border-radius: 50%;
     object-fit: cover;
+}
+.img-quadrado {
+    height: 35px;
+    width: 35px;
 }
