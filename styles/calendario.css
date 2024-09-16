@@ -63,5 +63,20 @@ body{
     width: 100%;
     background-color: rgb(0, 0, 0, 0.3);
     border-radius: 10px;
-    marg
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.data-dia {
+    font-size: 24px;
+}
+.quadrado-rosa {
+    background-color: var(--bs-primary);
+    border-radius: 20px;
+    border: 3px solid pink;
+    padding: 15px;
+}
+.area-botao {
+    background-color: white;
 }
