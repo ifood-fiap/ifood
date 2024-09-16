@@ -1,31 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+:root {
+    --bs-primary: #8C111A !important;
+    --bs-secondary: #260507 !important;
+    --bs-success: #8FD29E !important;
+    --bs-info: #53040B !important;
+    --bs-warning: #F1D17E !important;
+    --bs-danger: #EA1D2C !important;
+    --bs-red: #E86C6C !important;
+    --bs-light: #fff !important;
+    --bs-dark: #000 !important;
+    --bs-gray: #ECECEC !important;
+    --bs-darkgray: #D9D9D9 !important;
+}
+
+body {
+    background-color: var(--bs-darkgray);
+}
+
+nav {
+    background-color: blue;
+}
+
 .cadastro {
     white-space: nowrap;
 }
+
+.navbar-toggler {
+    position: relative;
+    z-index: 1050;
+}
+
 .carousel-item {
-    background: #f8f9fa;
+    background-color: var(--bs-info);
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
 
 .navbar-nav {
     margin-left: auto;
 }
+
 .navbar-toggler {
-    margin-right: auto; /* Alinha o botão do menu burger à esquerda */
+    margin-right: auto; 
 }
+
 img {
     width: 100%;
     margin: 0 auto;
     border-radius: 20px;
 }
+
 .area-imagem {
-    margin: 20px 30px ;
+    margin: 20px 30px;
+}
+
+p {
+    color: var(--bs-light);
+}
+
+.saldo-valor {
+    font-size: 32px;
+    width: 60%;
+    margin: 40px auto;
+    padding: 6px 0;
+    background-color: var(--bs-darkgray);
+    color: var(--bs-dark);
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.financas {
+    width: 80%;
+    margin: 16px auto;
+    padding: 8px;
+    text-align: start;
+    border-radius: 8px;
+    background-color: var(--bs-gray);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--bs-dark);
+}
+
+.financas > p {
+    padding: 2px 8px;
+    color: var(--bs-dark);
+}
+
+.container-valor {
+    position: relative;
+    margin: 8px;
+    height: 30px;
+    background-color: var(--bs-darkgray);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.barra {
+    height: 30px;
+    border-radius: 0 4px 4px 0;
+}
+
+.barra-entrada {
+    width: 70%;
+    background-color: var(--bs-success);
+    
+}
+
+.barra-saida {
+    width: 35%;
+    background-color: var(--bs-red);
+}
+
+.barra-caixa {
+    width: 45%;
+    background-color: var(--bs-success);
+}
+
+.barra-delivery {
+    width: 20%;
+    background-color: var(--bs-success);
+}
+
+.barra-reservas {
+    width: 25%;
+    background-color: var(--bs-success);
+}
+
+.barra-aluguel {
+    width: 35%;
+    background-color: var(--bs-red);
+}
+
+.barra-utilidades {
+    width: 18%;
+    background-color: var(--bs-red);
+}
+
+.barra-pessoal {
+    width: 90%;
+    background-color: var(--bs-red);
+}
+
+.financa-valor {
+    position: absolute;
+    top: -10%;
+    left: 8px;
+    font-size: 24px;
+    color: var(--bs-dark);
+}
+
+div.carousel-item > p {
+    margin: auto 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer > p {
+    margin: 8px;
+    color: var(--bs-dark);
+    text-align: center;
 }
