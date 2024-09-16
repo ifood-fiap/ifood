@@ -18,10 +18,6 @@ body {
     background-color: var(--bs-darkgray);
 }
 
-nav {
-    background-color: blue;
-}
-
 .cadastro {
     white-space: nowrap;
 }
@@ -57,8 +53,8 @@ img {
 }
 
 .imagem-relatorio {
-    height: 100%;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -155,10 +151,31 @@ p {
     color: var(--bs-dark);
 }
 
+.legenda {
+    display: flex;
+    justify-content: center;
+}
+
+.legenda > p {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: var(--bs-dark);
+}
+
+p.real {
+    background-color: var(--bs-success);
+    border-radius: 0 0 0 8px;
+}
+
+p.planejado {
+    background-color: var(--bs-red);
+    border-radius: 0 0 8px 0;
+}
+
 .ver-mais {
-    background-color: var(--bs-secondary);
-    margin: auto 16px;
-    padding: 8px;
+    
+    margin: 0 auto;
+    padding: 16px;
     font-size: 24px;
     color: var(--bs-light);
 }
@@ -171,6 +188,7 @@ div.carousel-item > p {
     margin: auto 0;
     font-weight: bold;
     font-size: 24px;
+    text-transform: uppercase;
 }
 
 footer > p {

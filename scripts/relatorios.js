@@ -1,25 +1,18 @@
-function changeImage() {
-    // Esconde todas as imagens
-    document.querySelectorAll('.imagem-relatorio').forEach(img => img.style.display = 'none');
-    
-    // Pega o item ativo do carrossel
-    const activeItem = document.querySelector('.carousel-item.active');
-    
-    // Obtém o ID da imagem correspondente
-    const imgId = activeItem.getAttribute('data-img');
-    
-    // Exibe a imagem correspondente
-    if (imgId) {
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselElement = document.getElementById('monthsCarousel');
+    const imageElements = document.querySelectorAll('.imagem-relatorio');
+
+    function updateImage() {
+        const activeItem = carouselElement.querySelector('.carousel-item.active');
+        const imgId = activeItem.getAttribute('data-img');
         const imgToShow = document.getElementById(imgId);
+        imageElements.forEach(img => img.classList.add('d-none'));
+        
         if (imgToShow) {
-            imgToShow.style.display = 'block';
+            imgToShow.classList.remove('d-none');
         }
     }
-}
+    carouselElement.addEventListener('slid.bs.carousel', updateImage);
 
-// Adiciona o listener para detectar mudanças no carrossel
-const carousel = document.getElementById('monthsCarousel');
-carousel.addEventListener('slid.bs.carousel', changeImage);
-
-// Garante que a imagem correta seja carregada ao iniciar
-document.addEventListener('DOMContentLoaded', changeImage);
+    updateImage();
+});
