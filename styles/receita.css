@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --bs-primary: #8C111A !important;
+    --bs-secondary: #260507 !important;
+    --bs-success: #8FD29E !important;
+    --bs-info: #53040B !important;
+    --bs-warning: #F1D17E !important;
+    --bs-danger: #EA1D2C !important;
+    --bs-red: #E86C6C !important;
+    --bs-light: #fff !important;
+    --bs-dark: #000 !important;
+    --bs-gray: #ECECEC !important;
+    --bs-darkgray: #D9D9D9 !important;
+}
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins';
+  }
+
+  body {
+    background-color: var(--bs-darkgray);
+}
+
+.financas {
+    width: 80%;
+    margin: 8px auto;
+    padding: 8px;    
+    text-align: start;
+    border-radius: 8px;    
+    
+    color: var(--bs-dark);
+}
+
+.financas > p {
+    padding: 2px 8px;
+    color: var(--bs-dark);
+}
+
+.container-valor {
+    position: relative;
+    margin: 8px;
+    height: 30px;
+    background-color: var(--bs-darkgray);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.barra {
+    height: 30px;
+    border-radius: 0 4px 4px 0;
+}
+
+.barra-real {
+    width: 75%;
+    background-color: var(--bs-red);   
+}
+
+.barra-planejado {
+    width: 85%;
+    background-color: var(--bs-red);
+}
+
+.financa-valor {
+    position: absolute;
+    top: -10%;
+    left: 8px;
+    font-size: 24px;
+    color: var(--bs-dark);
+}
+
+.celula{
+    width: 25%;
+    background-color: var(--bs-gray);
+    border-radius: 10px;    
+}
+
+.table-total tr td {
+    background-color: var(--bs-primary);
+    border: none;
+    color: white;
+}
+
+.table th, .table td {
+    text-align: center;
+    background-color: var(--bs-gray);
+}
+
+.btn-danger {
+    background-color:var(--bs-danger);
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #ff4747;
+}
+
+.date {
+    font-size: 14px;
+    margin-top: 20px;
+    color: white;
+}
+
+.cabecalho th{
+    color: white;
+    background-color: var(--bs-primary);
+}
+
+.table thead tr, .table thead th, .table tfoot{
+    border: none;
+}
+
+main{
+    background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
+    padding: 1px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.container{
+    width: 80%;
+}
+
+.header-main p{
+    color: var(--bs-darkgray);
+}
