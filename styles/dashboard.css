@@ -173,7 +173,7 @@ p.planejado {
 }
 
 .ver-mais {
-    
+    display: none;
     margin: 0 auto;
     padding: 16px;
     font-size: 24px;
@@ -195,4 +195,10 @@ footer > p {
     margin: 8px;
     color: var(--bs-dark);
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .ver-mais {
+        display: block;
+    }
 }
