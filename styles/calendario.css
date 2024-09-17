@@ -32,6 +32,7 @@
 body{
     color: var(--bs-light);
 }
+
 /* Area menu */
 .menu {
     background-color: rgba(0, 0, 0, 0);
@@ -49,7 +50,11 @@ body{
     border-radius: 50%;
     object-fit: cover;
 }
+.area-menu .dropdown-menu {
+    background-color: var(--bs-light);
+}
 /* Fim area menu */
+
 .calendar-day {
     border: 1px solid #dee2e6;
     padding: 10px;
@@ -76,7 +81,8 @@ body{
     border-radius: 20px;
     border: 3px solid pink;
     padding: 15px;
+    width: 276px;
 }
-.area-botao {
+.area-botao button{
     background-color: white;
 }

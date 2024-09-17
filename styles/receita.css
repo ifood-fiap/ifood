@@ -13,28 +13,29 @@
     --bs-gray: #ECECEC !important;
     --bs-darkgray: #D9D9D9 !important;
 }
-  * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins';
-  }
 
-  body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
     background-color: var(--bs-darkgray);
 }
 
 .financas {
     width: 80%;
     margin: 8px auto;
-    padding: 8px;    
+    padding: 8px;
     text-align: start;
-    border-radius: 8px;    
-    
+    border-radius: 8px;
+
     color: var(--bs-dark);
 }
 
-.financas > p {
+.financas>p {
     padding: 2px 8px;
     color: var(--bs-dark);
 }
@@ -54,7 +55,7 @@
 
 .barra-real {
     width: 75%;
-    background-color: var(--bs-red);   
+    background-color: var(--bs-red);
 }
 
 .barra-planejado {
@@ -70,10 +71,10 @@
     color: var(--bs-dark);
 }
 
-.celula{
+.celula {
     width: 25%;
     background-color: var(--bs-gray);
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .table-total tr td {
@@ -82,13 +83,14 @@
     color: white;
 }
 
-.table th, .table td {
+.table th,
+.table td {
     text-align: center;
     background-color: var(--bs-gray);
 }
 
 .btn-danger {
-    background-color:var(--bs-danger);
+    background-color: var(--bs-danger);
     border: none;
 }
 
@@ -102,28 +104,66 @@
     color: white;
 }
 
-.cabecalho th{
+.cabecalho th {
     color: white;
     background-color: var(--bs-primary);
 }
 
-.table thead tr, .table thead th, .table tfoot{
+.table thead tr,
+.table thead th,
+.table tfoot {
     border: none;
 }
 
-main{
+main {
     background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
     padding: 1px;
 }
 
-.navbar-nav {
-    margin-left: auto;
+.container {
+    max-width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px black;
 }
 
-.container{
+/* .container{
     width: 80%;
+} */
+
+.header-main p {
+    color: var(--bs-darkgray);
+    margin: 24px auto;
 }
 
-.header-main p{
-    color: var(--bs-darkgray);
+/* Area menu */
+.menu {
+    background-color: rgba(0, 0, 0, 0);
 }
+
+.custem-text {
+    filter: invert(100%);
+}
+
+.custem-text :hover {
+    background-color: rgba(94, 94, 94, 0.2);
+    ;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    min-height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.area-menu .dropdown-menu {
+    background-color: var(--bs-light);
+}
+
+/* Fim area menu */

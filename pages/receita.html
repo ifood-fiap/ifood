@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,131 +8,150 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/receita.css">
 </head>
+
 <body>
-    <header>
-        <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
-            <!-- colocar o nav bar na cor do projeto -->
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/icons/conta-icon.svg" alt="">
-                </a>
-                <div class="navbar-collapse collapse" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Seu perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conversas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pagamentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Configurações</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ajuda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sair</a>
-                        </li>
-                    </ul>
+    <div class="container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg menu">
+                <div class="container-fluid area-menu">
+                    <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+                    </a>
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav custem-text">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Finanças
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/receita.html">Receita</a></li>
+                                    <li><a class="dropdown-item" href="../pages/despesas.html">Despesas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Histórico
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/extrato.html">Extrato</a></li>
+                                    <li><a class="dropdown-item" href="../pages/relatorio.html">Relatórios</a></li>
+                                    <li><a class="dropdown-item" href="../pages/calendario.html">Calendário</a></li>
+                                    <li><a class="dropdown-item" href="../pages/conversas.html">Conversas</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="../index.html">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="header-main">
+                <strong>
+                    <p class="text-center h1">RECEITAS</p>
+                </strong>
+            </div>
+            <div class="financas d-flex justify-content-around">
+                <div class="celula p-1">
+                    <p class="fs-4 m-1"><strong>Real</strong></p>
+                    <div class="container-valor">
+                        <div class="barra barra-real"></div>
+                        <p class="financa-valor">R$27.502,21</p>
+                    </div>
+                </div>
+                <div class="celula p-1">
+                    <p class="fs-4 m-1"><strong>Planejado</strong></p>
+                    <div class="container-valor">
+                        <div class="barra barra-planejado"></div>
+                        <p class="financa-valor">R$27.540,00</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <div class="header-main">
-            <strong><p class="text-center h1">RECEITAS</p></strong>
-        </div>
-        <div class="financas d-flex justify-content-around">
-            <div class="celula p-1">
-                <p class="fs-4 m-1"><strong>Real</strong></p>
-                <div class="container-valor">
-                    <div class="barra barra-real"></div>
-                    <p class="financa-valor">R$27.502,21</p>
+            <div class="container my-5">
+                <table class="table table-bordered">
+                    <thead class="cabecalho">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Valor Real</th>
+                            <th>Valor Planejado</th>
+                            <th>Diferença</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Caixa</td>
+                            <td>R$3500,00</td>
+                            <td>R$3500,00</td>
+                            <td>R$0,00</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery</td>
+                            <td>R$1240,39</td>
+                            <td>R$1680,00</td>
+                            <td>R$439,61</td>
+                        </tr>
+                        <tr>
+                            <td>Reservas</td>
+                            <td>R$14838,57</td>
+                            <td>R$14250,00</td>
+                            <td>- R$588,57</td>
+                        </tr>
+                        <tr>
+                            <td>Aluguel de espaço</td>
+                            <td>R$1100,43</td>
+                            <td>R$1090,00</td>
+                            <td>R$10,43</td>
+                        </tr>
+                        <tr>
+                            <td>Investimentos</td>
+                            <td>R$2621,76</td>
+                            <td>R$2500,00</td>
+                            <td>R$121,76</td>
+                        </tr>
+                        <tr>
+                            <td>Subsídios</td>
+                            <td>R$758,32</td>
+                            <td>R$820,00</td>
+                            <td>R$61,68</td>
+                        </tr>
+                        <tr>
+                            <td>Eventos e Catering</td>
+                            <td>R$478,24</td>
+                            <td>R$500,00</td>
+                            <td>R$21,76</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table-total">
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td>R$27.502,21</td>
+                            <td>R$27.540,00</td>
+                            <td>- R$37,79</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="text-end date">17 de agosto - 2024</div>
+
+                <div class="text-center my-3">
+                    <button class="btn btn-danger btn-lg">Adicionar despesa</button>
                 </div>
             </div>
-            <div class="celula p-1">
-                <p class="fs-4 m-1"><strong>Planejado</strong></p>
-                <div class="container-valor">
-                    <div class="barra barra-planejado"></div>
-                    <p class="financa-valor">R$27.540,00</p>
-                </div>    
-            </div>                
-        </div>                   
-        <div class="container my-5">
-            <table class="table table-bordered">
-                <thead class="cabecalho">
-                    <tr>
-                        <th>Tipo</th>
-                        <th>Valor Real</th>
-                        <th>Valor Planejado</th>
-                        <th>Diferença</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Caixa</td>
-                        <td>R$3500,00</td>
-                        <td>R$3500,00</td>
-                        <td>R$0,00</td>
-                    </tr>
-                    <tr>
-                        <td>Delivery</td>
-                        <td>R$1240,39</td>
-                        <td>R$1680,00</td>
-                        <td>R$439,61</td>
-                    </tr>
-                    <tr>
-                        <td>Reservas</td>
-                        <td>R$14838,57</td>
-                        <td>R$14250,00</td>
-                        <td>- R$588,57</td>
-                    </tr>
-                    <tr>
-                        <td>Aluguel de espaço</td>
-                        <td>R$1100,43</td>
-                        <td>R$1090,00</td>
-                        <td>R$10,43</td>
-                    </tr>
-                    <tr>
-                        <td>Investimentos</td>
-                        <td>R$2621,76</td>
-                        <td>R$2500,00</td>
-                        <td>R$121,76</td>
-                    </tr>
-                    <tr>
-                        <td>Subsídios</td>
-                        <td>R$758,32</td>
-                        <td>R$820,00</td>
-                        <td>R$61,68</td>
-                    </tr>
-                    <tr>
-                        <td>Eventos e Catering</td>
-                        <td>R$478,24</td>
-                        <td>R$500,00</td>
-                        <td>R$21,76</td>
-                    </tr>                    
-                </tbody>
-                <tfoot class="table-total">
-                    <tr>
-                        <td><strong>Total</strong></td>
-                        <td>R$27.502,21</td>
-                        <td>R$27.540,00</td>
-                        <td>- R$37,79</td>
-                    </tr>
-                </tfoot>
-            </table>
-            <div class="text-end date">17 de agosto - 2024</div>
-            
-            <div class="text-center my-3">
-                <button class="btn btn-danger btn-lg">Adicionar despesa</button>
-            </div>    
-        </div>
-    </main>
+        </main>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

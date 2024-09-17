@@ -135,3 +135,7 @@ body {
     height: 35px;
     width: 35px;
 }
+
+.area-menu .dropdown-menu {
+    background-color: var(--bs-light);
+}
