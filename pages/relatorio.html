@@ -8,51 +8,61 @@
     <link rel="stylesheet" href="../styles/relatorio.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
-            <!-- colocar o nav bar na cor do projeto -->
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/icons/conta-icon.svg" alt="">
-                </a>
-                <div class="navbar-collapse collapse" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Seu perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conversas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pagamentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Configurações</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ajuda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sair</a>
-                        </li>
-                    </ul>
+    <div class="container">
+
+
+        <header>
+            <nav class="navbar navbar-expand-lg menu">
+                <div class="container-fluid area-menu">
+                    <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+                    </a>
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav custem-text">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/receita.html">Receitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/despesas.html">Despesas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/extrato.html">Extrato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/relatorio.html">Relatório</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/calendario.html">Calendário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/conversas.html">Conversas</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="../index.html">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="area-imagem">
-            <h2 class="faturamento">Faturamento mensal</h2>
-            <img class="my-5" src="../assets/images/faturamento.svg" alt="Grafico">
-            <h2 class="cupom">Vendas</h2>
-            <img class="mt-1 mb-5" src="../assets/images/cupom.svg" alt="Grafico">
-            <h2 class="faturamento">Produtos mais comercializados por horário</h2>
-            <img class="my-5" src="../assets/images/mais-vendido.svg" alt="Grafico">
-        </section>
-    </main>
+            </nav>
+        </header>
+        <main>
+            <section class="area-imagem">
+                <h2 class="faturamento">Faturamento mensal</h2>
+                <img class="my-5" src="../assets/images/faturamento.svg" alt="Grafico">
+                <h2 class="cupom">Vendas</h2>
+                <img class="mt-1 mb-5" src="../assets/images/cupom.svg" alt="Grafico">
+                <h2 class="faturamento">Produtos mais comercializados por horário</h2>
+                <img class="my-5" src="../assets/images/mais-vendido.svg" alt="Grafico">
+            </section>
+        </main>
+    </div>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../scripts/relatorios.js"></script>
