@@ -13,7 +13,8 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg menu">
             <div class="container-fluid area-menu">
-                <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="#">
@@ -22,27 +23,51 @@
                 <div class="navbar-collapse collapse" id="menu">
                     <ul class="navbar-nav custem-text">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Seu perfil</a>
+                            <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Finanças
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/receita.html">Receita</a></li>
+                                <li><a class="dropdown-item" href="../pages/despesas.html">Despesas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Histórico
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../pages/extrato.html">Extrato</a></li>
+                                <li><a class="dropdown-item" href="../pages/relatorio.html">Relatórios</a></li>
+                                <li><a class="dropdown-item" href="../pages/calendario.html">Calendário</a></li>
+                                <li><a class="dropdown-item" href="../pages/conversas.html">Conversas</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Conversas</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Pagamentos</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Configurações</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Ajuda</a>
-                        </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href="#">Sair</a>
+                            <a class="nav-link" href="../index.html">Sair</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        -->
 
         <div class="d-lg-flex justify-content-around flex-lg-row container-superior">
             <div class="row area-saldo">
@@ -77,7 +102,7 @@
                         <img src="../assets/icons/filtro-icon.svg" alt="imagem filtro">
                         Filtrar
                     </a>
-    
+
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Último dia</a></li>
                         <li><a class="dropdown-item" href="#">Último 3 dias</a></li>

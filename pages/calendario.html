@@ -14,37 +14,48 @@
 
     <nav class="navbar navbar-expand-lg menu">
       <div class="container-fluid area-menu">
-        <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
-        </a>
-        <div class="navbar-collapse collapse" id="menu">
-          <ul class="navbar-nav custem-text">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Seu perfil</a>
-            </li>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="#">Conversas</a>
-            </li>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="#">Pagamentos</a>
-            </li>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="#">Configurações</a>
-            </li>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="#">Ajuda</a>
-            </li>
-            <li class="nav-item"></li>
-              <a class="nav-link" href="#">Sair</a>
-            </li>
-          </ul>
-        </div>
+          <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+              data-bs-target="#menu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+              <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+          </a>
+          <div class="navbar-collapse collapse" id="menu">
+              <ul class="navbar-nav custem-text">
+                  <li class="nav-item">
+                      <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle d-none d-lg-block" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Finanças
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../pages/receita.html">Receita</a></li>
+                          <li><a class="dropdown-item" href="../pages/despesas.html">Despesas</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Histórico
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="../pages/extrato.html">Extrato</a></li>
+                          <li><a class="dropdown-item" href="../pages/relatorio.html">Relatórios</a></li>
+                          <li><a class="dropdown-item" href="../pages/calendario.html">Calendário</a></li>
+                          <li><a class="dropdown-item" href="../pages/conversas.html">Conversas</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"></li>
+                      <a class="nav-link" href="../index.html">Sair</a>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </nav>
-    <div class=" mt-5">
+  </nav>
+    <div class="area-calendario mt-5">
       <h1 class="text-center">Programação</h1>
       <!-- <div class="row">
               <div class="col text-center">Dom</div>
@@ -102,7 +113,7 @@
         <div class="col calendar-day">29</div>
         <div class="col calendar-day">30</div>
       </div>
-      <div class="area-programacao">
+      <div class="area-programacao d-flex flex-column align-items-center">
         <div>
           <p class="data-dia">Hoje, 19 de junho</p>
         </div>

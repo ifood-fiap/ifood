@@ -10,232 +10,241 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar bg-dark navbar-dark navbar-expand-lg">
-            <!-- colocar o nav bar na cor do projeto -->
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/icons/conta-icon.svg" alt="">
-                </a>
-                <div class="navbar-collapse collapse" id="menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Seu perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Conversas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pagamentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Configurações</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ajuda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sair</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Section do total saldo -->
-        <section>
-            <div id="carouselExampleIndicators" class="carousel-dark carousel slide">
-                <div class="carousel-indicators d-none">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        aria-current="true" aria-label="Slide 1">
+    <div class="container">
+
+        <header>
+            <nav class="navbar navbar-expand-lg menu">
+                <div class="container-fluid area-menu">
+                    <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        class="active" aria-label="Slide 2">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3">
-                    </button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <div class="d-block w-100 text-center">
-                            <p class="mb-3 text-start fs-1 fw-bold">Receitas</p>
-                            <div class="financas">
-                                <p class="fs-1">Caixa</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-caixa"></div>
-                                    <p class="financa-valor">R$758,32</p>
-                                </div>
-                            </div>
-                            <div class="financas">
-                                <p class="fs-1">Delivery</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-delivery"></div>
-                                    <p class="financa-valor">R$347,60</p>
-                                </div>
-                            </div>
-                            <div class="financas">
-                                <p class="fs-1">Reservas</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-reservas"></div>
-                                    <p class="financa-valor">R$450,00</p>
-                                </div>
-                            </div>
-                            <a class="ver-mais" href="./receita.html">Ver detalhes</a>
-                        </div>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+                    </a>
+                    <div class="navbar-collapse collapse" id="menu">
+                        <ul class="navbar-nav custem-text">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/receita.html">Receitas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/despesas.html">Despesas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/extrato.html">Extrato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/relatorio.html">Relatório</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/calendario.html">Calendário</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/conversas.html">Conversas</a>
+                            </li>
+                            <li class="nav-item"></li>
+                                <a class="nav-link" href="../index.html">Sair</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="carousel-item active">
-                        <div class="d-block w-100 my-2 text-center">
-                            <p class="mb-3 text-start fs-1 fw-bold">Total Saldo</p>
-                            <p class="saldo-valor">R$ 1249,68</p>
-                            <p class="fs-1">Finanças</p>
-                            <div class="financas">
-                                <p class="fs-2">Entradas</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-entrada"></div>
-                                    <p class="financa-valor">R$14987,51</p>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Section do total saldo -->
+            <section>
+                <div id="carouselExampleIndicators" class="carousel-dark carousel slide">
+                    <div class="carousel-indicators d-none">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            class="active" aria-label="Slide 2">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3">
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="d-block w-100 text-center">
+                                <p class="mb-3 text-start fs-1 fw-bold">Receitas</p>
+                                <div class="financas">
+                                    <p class="fs-1">Caixa</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-caixa"></div>
+                                        <p class="financa-valor">R$758,32</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="financas">
-                                <p class="fs-2">Saídas</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-saida"></div>
-                                    <p class="financa-valor">R$8250,03</p>
+                                <div class="financas">
+                                    <p class="fs-1">Delivery</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-delivery"></div>
+                                        <p class="financa-valor">R$347,60</p>
+                                    </div>
                                 </div>
+                                <div class="financas">
+                                    <p class="fs-1">Reservas</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-reservas"></div>
+                                        <p class="financa-valor">R$450,00</p>
+                                    </div>
+                                </div>
+                                <a class="ver-mais" href="./receita.html">Ver detalhes</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-block w-100 text-center">
-                            <p class="mb-3 text-start fs-1 fw-bold">Despesas</p>
-                            <div class="financas">
-                                <p class="fs-1">Aluguel</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-aluguel"></div>
-                                    <p class="financa-valor">R$3500,00</p>
+                        <div class="carousel-item active">
+                            <div class="d-block w-100 my-2 text-center">
+                                <p class="mb-3 text-start fs-1 fw-bold">Total Saldo</p>
+                                <p class="saldo-valor">R$ 1249,68</p>
+                                <p class="fs-1">Finanças</p>
+                                <div class="financas">
+                                    <p class="fs-2">Entradas</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-entrada"></div>
+                                        <p class="financa-valor">R$14987,51</p>
+                                    </div>
+                                </div>
+                                <div class="financas">
+                                    <p class="fs-2">Saídas</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-saida"></div>
+                                        <p class="financa-valor">R$8250,03</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="financas">
-                                <p class="fs-1">Utilidades</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-utilidades"></div>
-                                    <p class="financa-valor">R$1240,39</p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100 text-center">
+                                <p class="mb-3 text-start fs-1 fw-bold">Despesas</p>
+                                <div class="financas">
+                                    <p class="fs-1">Aluguel</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-aluguel"></div>
+                                        <p class="financa-valor">R$3500,00</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="financas">
-                                <p class="fs-1">Pessoal</p>
-                                <div class="container-valor">
-                                    <div class="barra barra-pessoal"></div>
-                                    <p class="financa-valor">R$14838,57</p>
+                                <div class="financas">
+                                    <p class="fs-1">Utilidades</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-utilidades"></div>
+                                        <p class="financa-valor">R$1240,39</p>
+                                    </div>
                                 </div>
+                                <div class="financas">
+                                    <p class="fs-1">Pessoal</p>
+                                    <div class="container-valor">
+                                        <div class="barra barra-pessoal"></div>
+                                        <p class="financa-valor">R$14838,57</p>
+                                    </div>
+                                </div>
+                                <a class="ver-mais" href="./despesas.html">Ver detalhes</a>
                             </div>
-                            <a class="ver-mais" href="./despesas.html">Ver detalhes</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <!-- Section das receitas -->
-        <section class="area-imagem">
-            <div class="legenda">
-                <p class="real">Valor Real</p>
-                <p class="planejado">Valor Planejado</p>
-            </div>
-            <img id="img-caixa" class="imagem-relatorio caixa d-block" src="../assets/images/caixa.svg" alt="Grafico">
-            <img id="img-delivery" class="imagem-relatorio delivery d-none" src="../assets/images/delivery.svg" alt="Grafico">
-            <img id="img-reservas" class="imagem-relatorio reservas d-none" src="../assets/images/reservas.svg" alt="Grafico">
-            <img id="img-sublocacao" class="imagem-relatorio sublocacao d-none" src="../assets/images/sublocacao.svg" alt="Grafico">
-            <img id="img-investimentos" class="imagem-relatorio investimentos d-none" src="../assets/images/investimentos.svg" alt="Grafico">
-            <img id="img-subsidios" class="imagem-relatorio subsidios d-none" src="../assets/images/subsidios.svg" alt="Grafico">
-            <img id="img-eventos" class="imagem-relatorio eventos d-none" src="../assets/images/eventos.svg" alt="Grafico">
-            <img id="img-aluguel" class="imagem-relatorio aluguel d-none" src="../assets/images/aluguel.svg" alt="Grafico">
-            <img id="img-utilidades" class="imagem-relatorio utilidades d-none" src="../assets/images/utilidades.svg" alt="Grafico">
-            <img id="img-pessoal" class="imagem-relatorio pessoal d-none" src="../assets/images/pessoal.svg" alt="Grafico">
-            <img id="img-operacional" class="imagem-relatorio operacional d-none" src="../assets/images/operacional.svg" alt="Grafico">
-            <img id="img-equipamentos" class="imagem-relatorio equipamentos d-none" src="../assets/images/equipamentos.svg" alt="Grafico">
-            <img id="img-suprimentos" class="imagem-relatorio suprimentos d-none" src="../assets/images/suprimentos.svg" alt="Grafico">
-            <img id="img-limpeza" class="imagem-relatorio limpeza d-none" src="../assets/images/limpeza.svg" alt="Grafico">
-            <img id="img-ingredientes" class="imagem-relatorio ingredientes d-none" src="../assets/images/ingredientes.svg" alt="Grafico">
-        </section>
-        <!-- sectrion das despesas -->
-        <section>
-            <div id="monthsCarousel" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item text-center active" data-img="img-caixa">
-                        <p>Caixa</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-delivery">
-                        <p>Delivery</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-reservas">
-                        <p>Reservas</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-sublocacao">
-                        <p>Sublocação</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-investimentos">
-                        <p>Investimentos</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-subsidios">
-                        <p>Subsídios</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-eventos">
-                        <p>Eventos</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-aluguel">
-                        <p>Aluguel</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-utilidades">
-                        <p>Utilidades</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-pessoal">
-                        <p>Pessoal</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-operacional">
-                        <p>Operacional</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-equipamentos">
-                        <p>Equipamentos</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-suprimentos">
-                        <p>Suprimentos</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-limpeza">
-                        <p>Limpeza</p>
-                    </div>
-                    <div class="carousel-item text-center" data-img="img-ingredientes">
-                        <p>Ingredientes</p>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#monthsCarousel"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev botao-carousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#monthsCarousel"
-                    data-bs-slide="next">
+                <button class="carousel-control-next botao-carousel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Todos os direitos reservados</p>
-    </footer>
+            </section>
+            <!-- Section das receitas -->
+            <section class="area-imagem">
+                <div class="legenda">
+                    <p class="real">Valor Real</p>
+                    <p class="planejado">Valor Planejado</p>
+                </div>
+                <img id="img-caixa" class="imagem-relatorio caixa d-block" src="../assets/images/caixa.svg" alt="Grafico">
+                <img id="img-delivery" class="imagem-relatorio delivery d-none" src="../assets/images/delivery.svg" alt="Grafico">
+                <img id="img-reservas" class="imagem-relatorio reservas d-none" src="../assets/images/reservas.svg" alt="Grafico">
+                <img id="img-sublocacao" class="imagem-relatorio sublocacao d-none" src="../assets/images/sublocacao.svg" alt="Grafico">
+                <img id="img-investimentos" class="imagem-relatorio investimentos d-none" src="../assets/images/investimentos.svg" alt="Grafico">
+                <img id="img-subsidios" class="imagem-relatorio subsidios d-none" src="../assets/images/subsidios.svg" alt="Grafico">
+                <img id="img-eventos" class="imagem-relatorio eventos d-none" src="../assets/images/eventos.svg" alt="Grafico">
+                <img id="img-aluguel" class="imagem-relatorio aluguel d-none" src="../assets/images/aluguel.svg" alt="Grafico">
+                <img id="img-utilidades" class="imagem-relatorio utilidades d-none" src="../assets/images/utilidades.svg" alt="Grafico">
+                <img id="img-pessoal" class="imagem-relatorio pessoal d-none" src="../assets/images/pessoal.svg" alt="Grafico">
+                <img id="img-operacional" class="imagem-relatorio operacional d-none" src="../assets/images/operacional.svg" alt="Grafico">
+                <img id="img-equipamentos" class="imagem-relatorio equipamentos d-none" src="../assets/images/equipamentos.svg" alt="Grafico">
+                <img id="img-suprimentos" class="imagem-relatorio suprimentos d-none" src="../assets/images/suprimentos.svg" alt="Grafico">
+                <img id="img-limpeza" class="imagem-relatorio limpeza d-none" src="../assets/images/limpeza.svg" alt="Grafico">
+                <img id="img-ingredientes" class="imagem-relatorio ingredientes d-none" src="../assets/images/ingredientes.svg" alt="Grafico">
+            </section>
+            <!-- sectrion das despesas -->
+            <section>
+                <div id="monthsCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item text-center active" data-img="img-caixa">
+                            <p>Caixa</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-delivery">
+                            <p>Delivery</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-reservas">
+                            <p>Reservas</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-sublocacao">
+                            <p>Sublocação</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-investimentos">
+                            <p>Investimentos</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-subsidios">
+                            <p>Subsídios</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-eventos">
+                            <p>Eventos</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-aluguel">
+                            <p>Aluguel</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-utilidades">
+                            <p>Utilidades</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-pessoal">
+                            <p>Pessoal</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-operacional">
+                            <p>Operacional</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-equipamentos">
+                            <p>Equipamentos</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-suprimentos">
+                            <p>Suprimentos</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-limpeza">
+                            <p>Limpeza</p>
+                        </div>
+                        <div class="carousel-item text-center" data-img="img-ingredientes">
+                            <p>Ingredientes</p>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#monthsCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#monthsCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </div>
 
 
     <script src="../js/bootstrap.bundle.min.js"></script>
