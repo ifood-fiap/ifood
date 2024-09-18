@@ -60,6 +60,11 @@ body {
     border-radius: 8px;
 }
 
+.header-main p {
+    color: var(--bs-darkgray);
+    margin: 24px auto;
+}
+
 img {
     width: 100%;
     margin: 0 auto;

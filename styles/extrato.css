@@ -53,6 +53,11 @@ body {
     max-width: 1024px;
 }
 
+.header-main p {
+    color: var(--bs-darkgray);
+    margin: 24px auto;
+}
+
 .area-saldo {
     border: 1px solid var(--bs-dark);
     margin: 20px;
