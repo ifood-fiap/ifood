@@ -32,15 +32,11 @@
     .area-financas {
         width: 300px;
     }
-    
-    /* .container-superior {
-        max-width: 960px;
-        margin: 0 auto;
-    
-    } */
-    
 }
 
+body {
+    color: var(--bs-light);
+}
 
 .container{
     max-width: 100%;
@@ -52,9 +48,11 @@
     box-shadow: 0 4px 8px black;
 }
 
-body {
-    color: var(--bs-light);
+.container-box {
+    margin: 0 auto;
+    max-width: 1024px;
 }
+
 .area-saldo {
     border: 1px solid var(--bs-dark);
     margin: 20px;

@@ -55,12 +55,12 @@ body {
 
 .barra-real {
     width: 75%;
-    background-color: var(--bs-red);
+    background-color: var(--bs-success);
 }
 
 .barra-planejado {
     width: 85%;
-    background-color: var(--bs-red);
+    background-color: var(--bs-success);
 }
 
 .financa-valor {
