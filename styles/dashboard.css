@@ -29,9 +29,9 @@ body {
     white-space: nowrap;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
     position: relative;
-}
+} */
 
 .carousel-item {
     background-color: var(--bs-info);
@@ -43,15 +43,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
-
-
-/* .navbar-nav {
-    margin-left: auto;
-}
-
-.navbar-toggler {
-    margin-right: auto;
-} */
 
 img {
     width: 100%;
@@ -225,7 +216,7 @@ footer>p {
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
-    border-radius: 8px;
+    
     box-shadow: 0 4px 8px black;
 }
 /* Area menu */
@@ -250,3 +241,11 @@ footer>p {
     background-color: var(--bs-light);
 }
 /* Fim area menu */
+section .botao-carousel {
+    max-height: 300px;
+    width: 24px;
+    margin: 300px 8px 0px 8px;
+}
+.total-saldo .carousel-item{
+    background-color: transparent;
+}
