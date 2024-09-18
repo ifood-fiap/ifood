@@ -9,8 +9,6 @@
 </head>
 <body>
     <div class="container">
-
-
         <header>
             <nav class="navbar navbar-expand-lg menu">
                 <div class="container-fluid area-menu">
@@ -59,9 +57,26 @@
                 <h2 class="cupom">Vendas</h2>
                 <img class="mt-1 mb-5" src="../assets/images/cupom.svg" alt="Grafico">
                 <h2 class="faturamento">Produtos mais comercializados por horário</h2>
-                <img class="my-5" src="../assets/images/mais-vendido.svg" alt="Grafico">
+                <div class="dropdown area-filtro">
+                    <a class="btn dropdown-toggle fundo-filtro" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img class="img-filtro" src="../assets/icons/filtro-icon.svg" alt="imagem filtro">
+                        Filtrar
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" data-img="manha">Manhã</a></li>
+                        <li><a class="dropdown-item" href="#">Tarde</a></li>
+                        <li><a class="dropdown-item" href="#">Noite</a></li>
+                    </ul>
+                    <img id="img-manha" class="my-5" src="../assets/images/mais-vendido-manha.svg" alt="Grafico">
+                    <img id="img-tarde" class="my-5 d-none" src="../assets/images/mais-vendido-tarde.svg" alt="Grafico">
+                    <img id="img-noite" class="my-5 d-none" src="../assets/images/mais-vendido-noite.svg" alt="Grafico">
+                </div>
             </section>
         </main>
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
     </div>
 
     <script src="../js/bootstrap.bundle.min.js"></script>

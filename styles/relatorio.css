@@ -20,6 +20,11 @@
     padding: 0;
     font-family: 'Poppins';
 }
+
+body {
+    background-color: var(--bs-darkgray);
+}
+
 .container{
     max-width: 100%;
     height: 100%;
@@ -27,7 +32,6 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
-    border-radius: 8px;
     box-shadow: 0 4px 8px black;
 }
 /* Area menu */
@@ -51,10 +55,9 @@
     background-color: var(--bs-light);
 }
 /* Fim area menu */
-
-
-body {
+.area-imagem {
     background-color: var(--bs-darkgray);
+    border-radius: 8px;
 }
 
 img {
@@ -73,4 +76,24 @@ img {
     padding: 8px 16px;
     text-align: center;
     background-color: var(--bs-red);
+}
+
+.area-filtro {
+    margin: 24px;
+}
+
+.fundo-filtro{
+    background-color: rgba(187, 187, 187, 0.2);
+    color: var(--bs-dark);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.img-filtro {
+    width: max-content;
+}
+
+footer>p {
+    margin: 8px;
+    color: var(--bs-dark);
+    text-align: center;
 }
