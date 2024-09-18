@@ -358,7 +358,7 @@
   }
   .add-event {
     position: absolute;
-    bottom: 30px;
+    bottom: 5px;
     right: 30px;
     width: 40px;
     height: 40px;
@@ -487,14 +487,11 @@
   
   /* media queries */
   
-  @media screen and (max-width: 1000px) {
-    body {
-      align-items: flex-start;
-      justify-content: flex-start;
-    }
+  @media screen and (max-width: 900px) {
+    
     .container {
       min-height: 100vh;
-      flex-direction: column;
+      flex-direction: row;
       border-radius: 0;
     }
     .container .left {
@@ -507,6 +504,9 @@
       height: 100%;
       padding: 20px 0;
     }
+
+    
+
     .calendar::before,
     .calendar::after {
       top: 100%;
@@ -526,7 +526,13 @@
     .add-event-wrapper {
       bottom: 100px;
     }
+    .add-event {
+      bottom: 230px;
+      right: 30px;
+    }
   }
+
+
   @media screen and (max-width: 500px) {
     .calendar .month {
       height: 75px;
@@ -545,4 +551,6 @@
     .right .today-date {
       padding: 20px;
     }
+
+    
   }
