@@ -38,6 +38,7 @@
   body {    
     min-height: 100vh;      
     background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
+    padding-bottom: 10px;
   }
   .container {
     position: relative;
@@ -358,7 +359,7 @@
   }
   .add-event {
     position: absolute;
-    bottom: 5px;
+    bottom: 30px;
     right: 30px;
     width: 40px;
     height: 40px;
