@@ -1,140 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendario</title>
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../styles/calendario.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/programacao.css" />
 
-<body>
-  <div class="container">
 
-    <nav class="navbar navbar-expand-lg menu">
-      <div class="container-fluid area-menu">
-          <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
-              data-bs-target="#menu">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-              <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
-          </a>
-          <div class="navbar-collapse collapse" id="menu">
-            <ul class="navbar-nav custem-text">
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="../pages/receita.html">Receitas</a>
-                </li>
-                <li class="nav-item d-none d-lg-block">
-                    <a class="nav-link" href="../pages/despesas.html">Despesas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/extrato.html">Extrato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/relatorio.html">Relatório</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/calendario.html">Calendário</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/conversas.html">Conversas</a>
-                </li>
-                <li class="nav-item"></li>
-                    <a class="nav-link" href="../index.html">Sair</a>
-                </li>
-            </ul>
+    <title>Programação</title>
+  </head>
+  <body class="d-flex flex-column ">
+    <header>
+      <nav class="navbar navbar-expand-lg menu p-1">
+          <div class="container-fluid area-menu">
+              <button class="navbar-toggler custem-text" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#menu">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                  <img class="logo-img" src="../assets/images/logo-ifood.svg" alt="">
+              </a>
+              <div class="navbar-collapse collapse" id="menu">
+                  <ul class="navbar-nav custem-text">
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/dashboard.html">Dashboard</a>
+                      </li>
+                      <li class="nav-item d-none d-lg-block">
+                          <a class="nav-link" href="../pages/receita.html">Receitas</a>
+                      </li>
+                      <li class="nav-item d-none d-lg-block">
+                          <a class="nav-link" href="../pages/despesas.html">Despesas</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/extrato.html">Extrato</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/relatorio.html">Relatório</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/calendario.html">Calendário</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../pages/conversas.html">Conversas</a>
+                      </li>
+                      <li class="nav-item"></li>
+                          <a class="nav-link" href="../index.html">Sair</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+
+  <div>
+    <h1 class="text-center text-white">PROGRAMAÇÃO</h1>
+  </div>>
+    <div class="container d-flex flex-row">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Ir</button>
+            </div>
+            <button class="today-btn">Dia Atual</button>
+          </div>
         </div>
       </div>
-  </nav>
-    <div class="area-calendario mt-5">
-      <h1 class="text-center">Programação</h1>
-      <!-- <div class="row">
-              <div class="col text-center">Dom</div>
-              <div class="col text-center">Seg</div>
-              <div class="col text-center">Ter</div>
-              <div class="col text-center">Qua</div>
-              <div class="col text-center">Qui</div>
-              <div class="col text-center">Sex</div>
-              <div class="col text-center">Sáb</div>
-            </div> -->
-
-      <!-- Dias do mês -->
-      <div class="row">
-        <div class="col calendar-day">27</div> <!-- Espaços vazios para o início do mês -->
-        <div class="col calendar-day">28</div>
-        <div class="col calendar-day">29</div>
-        <div class="col calendar-day">30</div>
-        <div class="col calendar-day">31</div>
-        <div class="col calendar-day">1</div>
-        <div class="col calendar-day">2</div>
-      </div>
-      <div class="row">
-        <div class="col calendar-day">3</div>
-        <div class="col calendar-day">4</div>
-        <div class="col calendar-day">5</div>
-        <div class="col calendar-day">6</div>
-        <div class="col calendar-day">7</div>
-        <div class="col calendar-day">8</div>
-        <div class="col calendar-day">9</div>
-      </div>
-      <div class="row">
-        <div class="col calendar-day">10</div>
-        <div class="col calendar-day">11</div>
-        <div class="col calendar-day">12</div>
-        <div class="col calendar-day">13</div>
-        <div class="col calendar-day">14</div>
-        <div class="col calendar-day">15</div>
-        <div class="col calendar-day">16</div>
-      </div>
-      <div class="row">
-        <div class="col calendar-day">17</div>
-        <div class="col calendar-day">18</div>
-        <div class="col calendar-day current-day">19</div>
-        <div class="col calendar-day">20</div>
-        <div class="col calendar-day">21</div>
-        <div class="col calendar-day">22</div>
-        <div class="col calendar-day">23</div>
-      </div>
-      <div class="row">
-        <div class="col calendar-day">24</div>
-        <div class="col calendar-day">25</div>
-        <div class="col calendar-day">26</div>
-        <div class="col calendar-day">27</div>
-        <div class="col calendar-day">28</div>
-        <div class="col calendar-day">29</div>
-        <div class="col calendar-day">30</div>
-      </div>
-      <div class="area-programacao d-flex flex-column align-items-center">
-        <div>
-          <p class="data-dia">Hoje, 19 de junho</p>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">day</div>
+          <div class="event-date">date</div>
         </div>
-        <div class="quadrado-rosa">
-          <p>Pagamento</p>
-          <p>Pagar energia R$300,00</p>
-          <p>19 DE JUNHO</p>
-        </div>
-        <div class="quadrado-rosa">
-          <p>Pagamento</p>
-          <p>Pagar água R$400,00</p>
-          <p>19 DE JUNHO</p>
-        </div>
-        <div class="area-botao">
-          <button class="btn">Adicionar</button>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Adicionar Evento</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Nome do Evento" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Início do Evento"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Término do Evento"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Evento</button>
+          </div>
         </div>
       </div>
-    </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>    
 
-
-  </div>
-
-
-
-  <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <script src="../scripts/calendario.js"></script>
+  </body>
 </html>
