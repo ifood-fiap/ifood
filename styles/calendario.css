@@ -26,7 +26,6 @@
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, var(--bs-primary) -1.5%, var(--bs-secondary) 54.22%);
-    border-radius: 8px;
     box-shadow: 0 4px 8px black;
 }
 body{
